@@ -1,0 +1,1803 @@
+*{
+    box-sizing: border-box; /* Ensures padding/border are included in width/height calculations */
+    margin: 0;             /* Removes default margins from all elements */
+    padding: 0;            /* Removes default padding from all elements */
+}
+body{
+    background-color: #f5f5f5;
+}
+main{
+    width: 100%;
+}
+@import url('satoshi.css');
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    main{
+        padding: 20px;
+    }
+    .topnav {
+        overflow: hidden;
+        background-color: transparent;
+        margin: 16px 16px 16px 16px;
+        padding: 1% 1%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+    }
+    .topnav span a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        
+    }
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    .topnav #myLinks {
+        display: none;
+    }
+    .topnav #Signup {
+        display: none;
+    }
+    /* Style navigation menu links */
+    .topnav a{
+        color: white;
+        /*padding: 14px 16px;*/
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+       
+    }
+    /* Style the hamburger menu */
+    .topnav a.icon {
+        background: transparent;
+        color: black;  
+        width: 30px;
+        height: 30px;      
+    }
+    .fa .fa-bars{
+        width: 30px;
+        height: 30px;
+    }
+    /* Add a grey background color on mouse-over */
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    /* Style the active link (or home/logo) */
+    .active {
+    background-color: #f5f5f5;
+    color: white;
+    }
+
+    #logo-icon{
+        width: 43;
+        height: 43;
+    }
+
+    #logo-name{
+        width: 71.92;
+        height: 21.16;
+    }
+    #myLinks ul{
+        list-style-type: none;
+    }
+    
+    .topnav-desktop {
+        display: none;
+    }
+   
+    #drop #myLinks{
+        margin-left: auto;
+        padding: 10px 10px;
+        width: 50vw;
+        height: 100vw;
+        background-color: #DDD;
+                
+    }
+    #drop{
+        z-index: 100;
+        position: absolute;
+        right: 0;
+    }
+    #drop #myLinks ul{
+        height: 40%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    #drop #myLinks ul li{
+        width: 100%;
+        border-bottom: 0.5px solid grey ;
+        text-align: center;
+
+    }
+    #drop #myLinks ul li a{
+        text-decoration: none;
+    }
+     #drop #myLinks ul li a:hover{
+        color: aqua;
+    }
+    #drop #myLinks #Signup{
+    
+        display: flex;
+        flex-direction: column;
+    }
+    #drop #myLinks #Signup button{
+        margin-bottom: 10px;
+    }
+    #hero{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #hero-image{
+        scale: 55%;
+    }
+    h1{
+        font-size: 56px;
+    }
+    #hero-text p{
+        margin: 10px 0;
+        color: #00000060;
+    }
+    #GetApp{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+    } 
+    #GetApp #GetAppbtn{
+        margin-top: 50px;
+        width: 100%;
+        height: 48px;
+        color: #fff;
+        background-color: #0EA5E9;
+        border-radius: 36px;
+        border:1px solid transparent ;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    #GetApp #GetAppimg{
+        display: flex;
+        width: 100%;
+        margin-top: 20px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    #hero-image{
+        margin: -80px 0;
+    }
+    
+    /*socials*/
+    
+     #socials{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        font-size: 14px;
+        padding-bottom: 60px;
+        border-bottom: 1px solid #00000026;
+     }
+     #socialsimg{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+     }
+     
+     #socialsimg img{
+        padding-left: 10px;
+     } 
+     /*Tracker section*/
+    #trackersect {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    #trackerbtn{
+        font-size: 10px;
+        width: 132px;
+        height: 28px;
+        color: #0EA5E9;
+        background-color: transparent;
+        border:1px solid #0EA5E9 ;
+        border-radius: 36px;
+        padding: 5px 0px;
+        margin-bottom: 20px;
+    }
+    h2 {
+        font-size: 25px;
+        line-height: 1.2;
+    }
+    h2 #bluetxt {
+        color: #0EA5E9;
+
+    }
+    #GetAppbtn2 {
+        margin-top: 10px;
+        margin-bottom: 40px;
+        width: 100%;
+        height: 48px;
+        color: #fff;
+        background-color: #0EA5E9;
+        border-radius: 36px;
+        border:1px solid transparent ;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*Find flight section*/
+
+    #findflight{
+        width: 100%;
+        height: 475px;
+        padding: 15px;
+        background-image: url(/images/Planes.png);
+        background-size: cover;
+        background-color: #00000033;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #search{
+        width: 100%;
+        background-color: #f5f5f5;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        align-items: center;
+        padding: 5px 10px;
+    }
+    #search input{
+        border: 0px solid transparent;
+        background-color: transparent;
+    }
+    #Findme{
+        width: 100%;
+        height: 128px;
+        margin-top: 20px;
+        background-color: #f5f5f5;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    #Live{
+        display: block;
+        color: #f5f5f5;
+        background-color: #FF5E5E;
+        width: 50px;
+        border-radius: 20px;
+        padding: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+        font-size: 12px;
+    }
+    #flightlive{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    #flightlive :nth-child(3){
+        width: 24px;
+        height: 24px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-left: auto;
+    }
+    #Findme1{
+        padding: 12px;
+        width: 100%;
+        height: auto;
+        border: 1px solid #0000000D;
+        border-radius: 8px;
+    }
+    #findtxt{
+        font-size: 14px;
+        color: gray;
+        height: 15px;
+    }
+    #destination{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #dest-name{
+        color: #0EA5E9;
+    }
+    #plane-type{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+    }
+    #Airbus{
+        font-size: 12px;
+        color:#D4D4D4 ;
+    }
+
+    #MagnifyingGlass{
+        display: none;
+    }
+
+    #linebreak{
+        margin-top: 100px;
+        margin-bottom: 50px;
+        border: 1px solid #D4D4D4;
+    }
+
+    /*info sections*/
+
+    #info1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center; 
+    }
+
+    #info1 .item1 button{
+        font-size: 10px;
+        width: 132px;
+        height: 28px;
+        color: #0EA5E9;
+        background-color: transparent;
+        border:1px solid #0EA5E9 ;
+        border-radius: 36px;
+        padding: 5px 0px;
+        margin-bottom: 20px;
+    }
+    #info1it1txt{
+        margin: 10px 0;
+        color: #00000060;
+        font-size: 14px;
+        margin-bottom: 50px;
+    }
+
+    #info1 .item2{
+        width: 100%;
+        height: 342px;
+        background-color: #0EA5E9;
+        border-radius: 24px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+        padding-bottom: 0px;
+    }
+
+    #info2{
+        margin-top: 50px;
+        display: flex;
+    }
+    #Info1img2{display: none;}
+
+    #info2 .item1{
+        width: 100%;
+        height: 400px;
+        background-color: #0EA5E9;
+        border-radius: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 20px;
+    }
+
+     #info2 .item1 img{
+        scale: 80%;
+     }
+     
+     #info2 .item1 div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        margin-left: 30px;
+        width: 250px;
+        height: 136px;
+     }
+     #info2 .item1 div h2{
+        margin-bottom: 20px;
+     }
+
+     #info2 .item2{
+        display: none;
+    }
+
+    #info3 .item1{
+        display: none;
+    }
+
+    #info3{
+        margin-top: 50px;
+        display: flex;
+    }
+    
+    #info3 .item2{
+        width: 100%;
+        height: 400px;
+        background-color: #0EA5E9;
+        border-radius: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    #info3 .item2 img{
+        scale: 80%;
+    }
+
+    #info3 .item2 div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        margin-left: 30px;
+        width: 250px;
+        height: 136px;
+     }
+
+     #info3 .item2 div h2{
+        margin-bottom: 20px;
+     }
+
+     
+    #info4{
+        margin-top: 50px;
+        display: flex;
+        padding-bottom: 100px;
+        border-bottom: 0.5px solid #00000026;
+    }
+    
+    #info4 .item1{
+        width: 100%;
+        height: 400px;
+        background-color: #0EA5E9;
+        border-radius: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    #info4 .item1 img{
+        scale: 80%;
+    }
+
+    #info4 .item1 div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        margin-left: 30px;
+        width: 250px;
+        height: 136px;
+     }
+
+     #info4 .item1 div h2{
+        margin-right: auto;
+        margin-bottom: 20px;
+     }
+     #info4 .item2{
+        display: none;
+    }
+
+    /* Testimonials */
+    #Testimonial{
+        margin-top: 100px;
+    }
+    #testimonial-topic{
+        margin-top: 80px;
+    }
+     #testimonial-topic p{
+        font-size: 14px;
+        width: 120px;
+        height: 31px;
+        color: #0EA5E9;
+        background-color: transparent;
+        border: 1px solid #0EA5E9;
+        border-radius: 99px;
+        padding: 6px 12px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+     #testimonial-topic h2{
+        font-size: 25px;
+        line-height: 1.2;
+        margin-bottom: 50px;
+     }
+
+     #testimonial-container{
+        width: 1136px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: nowrap;
+        overflow: hidden;
+     }
+
+     .testimonial-item{
+        width: 266px;
+        height: 284px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #FFFFFF;
+        padding: 24px;
+        border-radius: 16px;
+        margin-right: 20px;
+        /* overflow: scroll; */
+     }
+     .reviews{
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 24px;
+        letter-spacing: -4%;
+     }
+     .testimonial-lower-sec{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin-right: auto;
+     }
+     .testimonial-circle{
+        width: 40px;
+        height: 40px;
+        border: 1px solid transparent;
+        border-radius: 20px;
+        background-color: green;
+     }
+     .test-name-container{
+        margin-left: 10px;
+     }
+     .testimonial-name{
+        font-size: 14px;
+        line-height: 24px;
+     }
+     .traveler{
+        font-size: 14px;
+        line-height: 24px;
+        color: #0EA5E9;
+     }
+
+     #testimonial-buttons button{
+        margin-top: 20px;
+        margin-bottom: 120px;
+        border: 1px solid transparent;
+        border-radius: 24px;
+        width: 48px;
+        height: 48px;
+     }
+
+     #testimonial-left-button{
+        background-color: #0EA5E9;
+     }
+     #testimonial-right-button{
+        background-color: #FFFFFF;
+     }
+
+     #testimonial-buttons{
+        border-bottom: 0.5px solid #00000026;
+     }
+
+     #test-circle1{
+        background-color: #FFD9A2;
+     }
+     #test-circle2{
+        background-color: #D7D7D9;
+     }
+    #test-circle3{
+        background-color: #FFC7D6;
+     }
+
+    /*FAQ*/
+    #FAQ{
+        margin-top: 100px;
+    }
+    #faq-topic{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+     }
+    #faq-topic p{
+        border: 1px solid #0EA5E9;
+        border-radius: 18px;
+        display: inline;
+        padding: 6px 12px;
+        color: #0EA5E9;
+        font-size: 14px;
+        width: 50px;
+        height: 31px;
+    }
+     #faq-topic h2{
+        margin-top: 20px;
+        margin-bottom: 30px;
+     }
+
+     .faq-container{
+        width: 100%;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #FFFFFF;
+        padding: 24px;
+        border-radius: 24px;
+     }
+
+     .faq-heading{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 20px;
+     }
+     
+     .faq-heading button{
+        border: transparent;
+        background-color: #FFFFFF;
+     }
+     .faq-content{
+        padding-top: 20px;
+        font-size: 18px;
+        color: #000000B2;
+        width: 87%;
+        margin-right: auto;
+     }
+
+    /* Footer */
+    footer{
+        margin-top: 100px;
+        padding: 50px 10px;
+        background-image: radial-gradient(circle at bottom left, #71D3FF, #0EA5E9);
+        border-radius: 25px;
+    }
+    
+    #ftitem1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        height: auto;
+        padding-bottom: 150px;
+        border-bottom: 0.5px solid #FFFFFF80;
+    }
+
+    #ftitem1 h2{
+        margin-bottom: 10px;
+        font-size: 32px;
+        font-style: normal;
+    }
+    #ftitem1 p{
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+    #ftitem1 button{
+        width: 100%;
+        height: 40px;
+        background-color: white;
+        border-radius: 36px;
+        border: 1px solid transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+    }
+    #ftitem1 button img{
+        scale: 80%;
+    }
+    #ftlogo{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items:center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding-left: 0px;
+    }
+    #Boltshift-white{
+        scale: 100%;
+        margin: 0px;
+        padding-right: 10px;
+    }
+
+    #SkyNav-white{
+        scale: 100%;
+        margin: 0px 0px;
+        padding: 0px 0px;
+    }
+
+    #ftlinks{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        color: white;
+    }
+    #ftlinks ul{
+        width: 50%;
+        color: #FFFFFF99;
+        font-size: 16px;
+        list-style: none;
+        line-height: 2;
+
+    }
+
+    #ftlinks ul p{
+        color: #FFFFFF;
+    }
+
+    #socials-white{
+        width: 100%;
+        scale: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    #ftlinks2{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        color: white;
+        line-height: 2;
+    }
+    
+
+
+
+
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    main{
+        padding: 70px 20px;
+    }
+    .topnav {
+        overflow: hidden;
+        background-color: transparent;
+        border: 16px 16px 16px 16px;
+        padding: 16px 8px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+    }
+    .topnav span a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        
+    }
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    .topnav #myLinks {
+        display: none;
+    }
+    .topnav #Signup {
+        display: none;
+    }
+    /* Style navigation menu links */
+    .topnav a{
+        color: white;
+        /*padding: 14px 16px;*/
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+       
+    }
+    /* Style the hamburger menu */
+    .topnav a.icon {
+        background: white;
+        color: black;        
+    }
+    /* Add a grey background color on mouse-over */
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    /* Style the active link (or home/logo) */
+    .active {
+    background-color: white;
+    color: white;
+    }
+
+    #logo-icon{
+        width: 43;
+        height: 43;
+    }
+
+    #logo-name{
+        width: 71.92;
+        height: 21.16;
+    }
+    #myLinks ul{
+        list-style-type: none;
+    }
+    .topnav-desktop {
+        display: none;
+    }
+
+    #drop #myLinks{
+        margin-left: auto;
+        padding: 10px 10px;
+        width: 50vw;
+        height: 100vw;
+        background-color: #DDD;
+                
+    }
+    #drop #myLinks ul{
+        height: 40%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+        /* align-content: center;
+        justify-items: center; */
+    }
+    #drop #myLinks ul li{
+        width: 100%;
+        border-bottom: 0.5px solid grey ;
+        text-align: center;
+
+    }
+    #drop #myLinks ul li a{
+        text-decoration: none;
+    }
+     #drop #myLinks ul li a:hover{
+        color: aqua;
+    }
+    #drop #myLinks #Signup{
+    
+        display: flex;
+        flex-direction: column;
+    }
+    #drop #myLinks #Signup button{
+        margin-bottom: 10px;
+    }
+    #hero{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #hero-image{
+        scale: 55%;
+    }
+    h1{
+        font-size: 56px;
+    }
+    #hero-text p{
+        margin: 10px 0;
+        color: #00000060;
+    }
+    #GetApp{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+    } 
+    #GetApp #GetAppbtn{
+        margin-top: 50px;
+        width: 100%;
+        height: 48px;
+        color: #fff;
+        background-color: #0EA5E9;
+        border-radius: 36px;
+        border:1px solid transparent ;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    #GetApp #GetAppimg{
+        display: flex;
+        width: 100%;
+        margin-top: 20px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    #hero-image{
+        margin: -80px 0;
+    }
+
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    main{
+        padding: 20px 100px;
+    }
+    .topnav{
+        display: none
+    }
+    #drop{
+        display: none;
+    }
+    .topnav-desktop{
+        width: 100vw;
+        display: flex;
+        background-color: #f5f5f5;
+        margin: 16px 24px 16px 24px;
+        padding: 16px 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+    }
+    .topnav-desktop #myLinks-desktop ul {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        list-style-type: none;
+        justify-items: space-between;
+    }
+   
+    .topnav-desktop #myLinks-desktop ul li a{
+        text-decoration: none;
+        margin-right: 20px;
+        font-size: 14px;
+    }
+    #myLinks-desktop{
+        width: 40%;
+        height: auto;
+    }
+    #logo-desktop{
+        width: 20%;
+        height: auto;
+        background-color: transparent;
+        
+    }
+    #logo-desktop a{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #logo-desktop #logo-icon{
+        width: 43;
+        height: 43;
+    }
+
+    #logo-desktop #logo-name{
+        width: 71.92;
+        height: 21.16;
+    }
+    #Signup-desktop{
+        display: block;
+        width: 40%;  
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;      
+    }
+    #Signup-desktop button{
+        margin-left: 10px;
+        padding: 5px 20px;
+        border: 0.5px  #ddd;
+        border-radius: 20px; 
+    }
+    #Signup-desktop #Signbtn{
+        background-color: white;
+    }
+    /*Hero section*/
+    #hero{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    #hero-image{
+        scale: 75%;
+        width: 50%;
+    }
+    h1{
+        font-size: 52px;
+    }
+    #hero-text p{
+        margin: 10px 0;
+        color: #0000008f;
+        width: 70%;
+    }
+    #GetApp{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+    } 
+    #GetApp #GetAppbtn{
+        width: 35%;
+        height: 48px;
+        color: #fff;
+        background-color: #0ea4e993;
+        border-radius: 36px;
+        border:1px solid transparent ;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; 
+        margin-right: 30px;
+    }
+    #GetApp #GetAppimg{
+        display: flex;
+        width: 70%;
+        height: auto;
+        flex-direction: row;
+        justify-content: center;
+        align-items:center;
+        border-left: 1px solid #00000026;
+    }
+
+    /*Socials*/
+    #socials{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        font-size: 14px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #00000026;
+     }
+     #socialsimg{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+     }
+     
+     #socialsimg img{
+        padding-left: 10px;
+     } 
+      /*Tracker section*/
+    #trackersect{
+        margin-top: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    #trackerbtn{
+        font-size: 10px;
+        width: 132px;
+        height: 28px;
+        color: #0EA5E9;
+        background-color: transparent;
+        border:1px solid #0EA5E9 ;
+        border-radius: 36px;
+        padding: 5px 0px;
+        margin-bottom: 20px;
+    }
+    h2 {
+        font-size: 40px;
+        line-height: 1.2;
+        width: 80%;
+    }
+    h2 #bluetxt {
+        color: #0EA5E9;
+
+    }
+    #GetAppbtn2 {
+        margin-top: 10px;
+        width: 180px;
+        height: 48px;
+        color: #fff;
+        background-color: #0EA5E9;
+        border-radius: 36px;
+        border:1px solid transparent ;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-top: auto;
+    }
+
+    /*Find flight section*/
+
+    #findflight{
+        margin-top: 50px;
+        width: 100%;
+        height: 475px;
+        padding: 15px;
+        background-image: url(/images/Planes.png);
+        background-size:auto;
+        background-color: #00000033;
+        border-radius: 20px;
+        background-repeat: repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    #search{
+        width: 30%;
+        background-color: #f5f5f5;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        align-items: center;
+        padding: 5px 10px;
+    }
+    #search input{
+        border: 0px solid transparent;
+        background-color: transparent;
+        
+    }
+    #Findme{
+        width: 30%;
+        height: 128px;
+        margin-top: 20px;
+        background-color: #f5f5f5;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    #Live{
+        display: block;
+        color: #f5f5f5;
+        background-color: #FF5E5E;
+        width: 50px;
+        border-radius: 20px;
+        padding: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+        font-size: 12px;
+    }
+    #flightlive{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    #flightlive :nth-child(3){
+        width: 24px;
+        height: 24px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-left: auto;
+    }
+    #Findme1{
+        padding: 12px;
+        width: 100%;
+        height: auto;
+        border: 1px solid #0000000D;
+        border-radius: 8px;
+    }
+    #findtxt{
+        font-size: 14px;
+        color: gray;
+        height: 15px;
+    }
+    #destination{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #dest-name{
+        color: #0EA5E9;
+    }
+    #plane-type{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+    }
+    #Airbus{
+        font-size: 12px;
+        color:#D4D4D4 ;
+    }
+    #MagnifyingGlass{
+        background-color: #f5f5f5;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: auto;
+        margin-top: auto;
+        width: 44px;
+        height: 101px;
+        border-radius: 12px;
+    }
+    #MagnifyingGlass img{
+        width:24px;
+        height: 24px;
+    }
+
+    #linebreak{
+        margin-top: 150px;
+        margin-bottom: 100px;
+        border: 1px solid #D4D4D4;
+    }
+
+    /* info sections*/
+
+     #info1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center; 
+    }
+
+    #info1 .item1 button{
+        font-size: 10px;
+        width: 132px;
+        height: 28px;
+        color: #0EA5E9;
+        background-color: transparent;
+        border:1px solid #0EA5E9 ;
+        border-radius: 36px;
+        padding: 5px 0px;
+        margin-bottom: 5px;
+    }
+    #info1it1txt{
+        margin: 10px 0;
+        color: #00000060;
+        font-size: 14px;
+        margin-bottom: 50px;
+        width: 80%;
+    }
+    #info1 .item1 {
+        width: 80%;
+        height: auto;
+    }
+
+    #info1 .item2{
+        width: 700px;
+        height: 600px;
+        background-color: #0EA5E9;
+        border-radius: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 0px;
+        margin-top: auto;
+        /* margin-left: 40px; */
+        display: relative;
+    }
+    #info1 .item2 img{
+        scale: 90%;
+        position: relative;
+        top: 50px;
+    }
+    #Info1img{
+        display: none;
+     }
+   #info2{
+        margin-top: 150px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #info2 .item1{
+        width: 60%;
+        height: 369px;
+        background-color: #0EA5E9;
+        border-radius: 24px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+    }
+
+     #info2 .item1 img{
+        scale: 80%;
+     }
+     
+     #info2 .item1 div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        width: auto;
+        height: 136px;
+        /* padding: 10px; */
+     }
+     #info2 .item1 div h2{
+        margin-bottom: 20px;
+        font-size: 32px;
+        width: 70%;
+     }
+      #info2 .item1 div p{
+        width: 70%;
+     }
+     
+    #info2 .item2{
+        width: 35%;
+        height: 369px;
+        background-color: #D9D9D980;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        border-radius: 40px;
+    }
+    #info3{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #info3 .item1{
+        display: block;
+        width: 30%;
+        height: 369px;
+        background-image: url(/images/plane\ wings.jpg);
+        background-position: -100px -200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        border-radius: 40px;
+    }
+     #info3 .item2{
+        width: 65%;
+        height: 369px;
+        background-color: #0EA5E9;
+        border-radius: 24px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+    }
+    
+     #info3 .item2 img{
+        scale: 80%;
+     }
+     
+     #info3 .item2 div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        width: auto;
+        height: 136px;
+
+     }
+     #info3 .item2 div h2{
+        width: 70%;
+        margin-bottom: 20px;
+        font-size: 32px;
+     }
+      #info3 .item2 div p{
+        /* margin-left: 0px;  */
+        width: 70%;
+     }
+
+      #info4{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #info4 .item2{
+        display: block;
+        width: 30%;
+        height: 369px;
+        background-image: url(/images/Plane\ boarding.jpg);
+        background-size: auto;
+        background-position: center right; 
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        border-radius: 40px;
+    }
+     #info4 .item1{
+        width: 65%;
+        height: 369px;
+        background-color: #0EA5E9;
+        border-radius: 24px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+    }
+    
+     #inf43 .item1 img{
+        scale: 80%;
+     }
+     
+     #info4 .item1 div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        width: auto;
+        height: 136px;
+
+     }
+     #info4 .item1 div h2{
+        width: 70%;
+        margin-bottom: 20px;
+        font-size: 32px;
+     }
+      #info4 .item1 div p{
+        width: 70%;
+     }
+
+         /*FAQ*/
+    #FAQ{
+        margin-top: 100px;
+    }
+    #faq-topic{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+     }
+    #faq-topic p{
+        border: 1px solid #0EA5E9;
+        border-radius: 18px;
+        display: inline;
+        padding: 6px 12px;
+        color: #0EA5E9;
+        font-size: 14px;
+        width: 50px;
+        height: 31px;
+    }
+     #faq-topic h2{
+        margin-top: 20px;
+        margin-bottom: 30px;
+        width: 432px;
+     }
+
+     .faq-container{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: #FFFFFF;
+        padding: 24px 40px;
+        border-radius: 24px;
+        width: 100%;
+     }
+
+     .faq-heading{
+        display: block;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 20px;
+        width: 100%;
+     }
+     .faq-heading p{
+        width: 90%;
+        margin-right: auto;
+     }
+     .faq-heading button{
+        border: transparent;
+        background-color: #FFFFFF;
+        width: 10%;
+     }
+     .faq-content{
+        padding-top: 20px;
+        font-size: 18px;
+        color: #000000B2;
+        width: 87%;
+        margin-right: auto;
+     }
+
+
+      /* Testimonials */
+    #Testimonial{
+        margin-top: 100px;
+    }
+    #testimonial-topic{
+        margin-top: 80px;
+    }
+     #testimonial-topic p{
+        font-size: 14px;
+        width: 120px;
+        height: 31px;
+        color: #0EA5E9;
+        background-color: transparent;
+        border: 1px solid #0EA5E9;
+        border-radius: 99px;
+        padding: 6px 12px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+     #testimonial-topic h2{
+        font-size: 25px;
+        line-height: 1.2;
+        margin-bottom: 50px;
+     }
+
+     #testimonial-container{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: nowrap;
+        overflow: auto;
+     }
+
+     .testimonial-item{
+        width: 456px;
+        height: 212px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #FFFFFF;
+        padding: 24px;
+        border-radius: 16px;
+        margin-right: 20px;
+     }
+     .reviews{
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 24px;
+        letter-spacing: -4%;
+     }
+     .testimonial-lower-sec{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin-right: auto;
+     }
+     .testimonial-circle{
+        width: 40px;
+        height: 40px;
+        border: 1px solid transparent;
+        border-radius: 20px;
+        background-color: green;
+     }
+     .test-name-container{
+        margin-left: 10px;
+     }
+     .testimonial-name{
+        font-size: 14px;
+        line-height: 24px;
+     }
+     .traveler{
+        font-size: 14px;
+        line-height: 24px;
+        color: #0EA5E9;
+     }
+
+     #testimonial-buttons button{
+        margin-top: 20px;
+        margin-bottom: 120px;
+        border: 1px solid transparent;
+        border-radius: 24px;
+        width: 48px;
+        height: 48px;
+     }
+
+     #testimonial-left-button{
+        background-color: #0EA5E9;
+     }
+     #testimonial-right-button{
+        background-color: #FFFFFF;
+     }
+
+     #testimonial-buttons{
+        border-bottom: 0.5px solid #00000026;
+     }
+
+     #test-circle1{
+        background-color: #FFD9A2;
+     }
+     #test-circle2{
+        background-color: #D7D7D9;
+     }
+    #test-circle3{
+        background-color: #FFC7D6;
+     }
+
+     /* Footer */
+    footer{
+        margin-top: 100px;
+        padding: 50px 100px;
+        background-image: radial-gradient(circle at bottom left, #71D3FF, #0EA5E9);
+        border-radius: 25px;
+    }
+    
+    #ftitem1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        height: auto;
+        padding-bottom: 100px;
+        border-bottom: 0.5px solid #FFFFFF80;
+    }
+
+    #ftitem1 h2{
+        margin-top: 100px;
+        margin-bottom: 10px;
+        font-size: 50px;
+        font-style: normal;
+    }
+    #ftitem1 p{
+        margin-bottom: 50px;
+        font-size: 14px;
+    }
+    #ftitem1 button{
+        width: 135px;
+        height: 48px;
+        background-color: white;
+        border-radius: 36px;
+        border: 1px solid transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+    }
+    #ftitem1 button img{
+        scale: 80%;
+    }
+    #ftlogosec {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 50px;
+    }
+    #ftlogo{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items:center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding-left: 0px;
+    }
+    #Boltshift-white{
+        scale: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #SkyNav-white{
+        scale: 100%;
+        margin-left:10px;
+        padding: 0px 0px;
+    }
+
+    #ftlinks{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        color: white;
+    }
+    #ftlinks ul{
+        width: 50%;
+        color: #FFFFFF99;
+        font-size: 16px;
+        list-style: none;
+        line-height: 2;
+        margin: 0px 30px;
+
+    }
+
+    #ftlinks ul p{
+        color: #FFFFFF;
+    }
+
+    #socials-white{
+        width: 50%;
+        scale: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    #ftlinks2{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        width: 70%;
+    }
+    #ftlinks2 p{
+        padding: 0px 10px 0px 10px;
+        border-right: 0.5px solid #FFFFFF80;
+    }
+    #socials-link2{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
